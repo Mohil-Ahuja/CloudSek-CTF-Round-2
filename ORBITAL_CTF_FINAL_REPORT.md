@@ -2,8 +2,6 @@
 
 **CTF Name:** Orbital Boot Sequence  
 **Category:** Web Security / Authentication Bypass  
-**Difficulty:** Medium-Hard (8/10)  
-**Points:** 500  
 **Server:** http://15.206.47.5:8443/  
 **Platform:** Flask, Werkzeug 3.1.4, Python 3.11.14  
 **Date Completed:** December 14-15, 2025  
